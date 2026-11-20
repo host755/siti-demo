@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Contatti e dove siamo – F.G.R. srl, Pontedera</title>
+<meta name="description" content="F.G.R. srl, Via Luciano Lama 16, Pontedera (PI). Telefono 0587 290115.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo">Proposta grafica dimostrativa – non è il sito ufficiale di F.G.R. srl. Testi riformulati dal sito originale; foto del cliente o segnaposto.</div>
+<div class="topbar"><div class="wrap"><span>Pontedera (PI) · Preventivo e sopralluogo senza impegno</span><a href="tel:+390587290115">Chiama ora: 0587 290115</a></div></div>
+<header class="site"><div class="wrap">
+<a href="index.html" class="logo">F.G.R.<span> srl</span></a>
+<nav><ul>
+<li><a class="" href="index.html">Home</a></li>
+<li><a class="" href="climatizzazione.html">Climatizzazione</a></li>
+<li><a class="" href="idraulica.html">Idraulica</a></li>
+<li><a class="" href="solare-termico.html">Solare termico</a></li>
+<li><a class="" href="ventilazione.html">Ventilazione</a></li>
+<li><a class="on" href="contatti.html">Contatti</a></li>
+</ul></nav>
+<a class="btn btn-primary" href="tel:+390587290115">Chiama</a>
+</div></header>
+<main>
+<div class="page-hero"><div class="wrap">
+<div class="crumb"><a href="index.html">Home</a> / Contatti</div>
+<h1>Contatti e dove siamo</h1>
+<p>Installazione e manutenzione di impianti idraulici, climatizzazione, riscaldamento, caldaie e pannelli solari termici. Preventivo e sopralluogo senza impegno.</p>
+</div></div>
+
+<section class="contact">
+<div class="wrap cgrid">
+<div>
+<h2>Come raggiungerci</h2>
+<ul>
+<li><strong>Sede operativa e amministrativa</strong><br>Via Luciano Lama 16, 56025 Pontedera (PI)<br><a style="text-decoration:underline" href="https://www.google.com/maps/search/?api=1&query=Via+Luciano+Lama+16+Pontedera" target="_blank" rel="noopener">Apri la mappa</a></li>
+<li><strong>Sede legale</strong><br>Via T. Romagnola 212H</li>
+<li><strong>Telefono</strong><br><a href="tel:+390587290115">0587 290115</a></li>
+<li><strong>Email</strong><br><a href="mailto:amministrazione@fgrstore.it">amministrazione@fgrstore.it</a></li>
+<li><strong>Social</strong><br><a style="text-decoration:underline" href="https://www.facebook.com/FGRsrl/" target="_blank" rel="noopener">Facebook</a></li>
+</ul>
+</div>
+<div class="box light" style="background:#fff">
+<h3>Scrivici</h3>
+<form id="f" onsubmit="return inviaMail(event)">
+<label for="n">Nome *</label><input type="text" id="n" required>
+<label for="m">Email *</label><input type="email" id="m" required>
+<label for="o">Oggetto</label><input type="text" id="o">
+<label for="t">Messaggio *</label><textarea id="t" required></textarea>
+<div class="chk"><input type="checkbox" id="p" required><label for="p" style="margin:0;font-weight:400">Ho letto l'<a style="text-decoration:underline" href="https://www.fgrstore.it/privacy-policy-3/" target="_blank" rel="noopener">informativa sulla privacy</a> *</label></div>
+<button class="btn btn-primary" type="submit">Invia</button>
+<p style="font-size:.8rem;color:#6b7b8c;margin-top:10px">Demo: il modulo apre il tuo programma di posta con il messaggio già pronto.</p>
+</form>
+</div>
+</div>
+</section>
+</main>
+<script>
+function inviaMail(e){
+  e.preventDefault();
+  var g=function(i){return document.getElementById(i).value.trim()};
+  var corpo="Nome: "+g("n")+"\nEmail: "+g("m")+"\n\n"+g("t");
+  var ogg=g("o")||"Richiesta dal sito";
+  location.href="mailto:amministrazione@fgrstore.it?subject="+encodeURIComponent(ogg)+"&body="+encodeURIComponent(corpo);
+  return false;
+}
+</script>
+<footer><div class="wrap">
+<span>F.G.R. srl (Fgr S.r.l. di Gabriele Feron) · Via Luciano Lama 16, 56025 Pontedera (PI) · P.IVA 02155900505</span>
+<span><a href="https://www.facebook.com/FGRsrl/" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.fgrstore.it/privacy-policy-3/" target="_blank" rel="noopener">Privacy e Cookie Policy</a></span>
+</div></footer>
+<a class="callfab" href="tel:+390587290115" aria-label="Chiama F.G.R.">Chiama</a>
+</body>
+</html>
