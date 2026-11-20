@@ -26,6 +26,9 @@ h1{font-size:38px;line-height:1.15;margin:0 0 14px}h2{font-size:26px;margin:0 0 
 .ph{background:radial-gradient(circle at 50% 50%,#9a9b9c 0 38%,transparent 40%) 0 0/34px 34px,#d4d5d6;border-radius:8px;min-height:160px;position:relative;overflow:hidden}
 .ph::after{content:attr(data-label);position:absolute;left:8px;bottom:8px;background:rgba(255,255,255,.9);padding:2px 8px;font-size:12px;border-radius:3px}
 .ph.big{min-height:300px}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff}
+.ph:has(img){background:#fff}.ph:has(img)::after{display:none}
+.ph.wide{min-height:0;aspect-ratio:800/596;max-width:560px;margin:0 0 24px}
 .sec{padding:44px 0}.sec.alt{background:var(--bg)}
 .chips{display:flex;flex-wrap:wrap;gap:10px}
 .chips a{background:#fff;border:2px solid var(--g);padding:8px 16px;border-radius:30px;text-decoration:none;font-weight:600}
